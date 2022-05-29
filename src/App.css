@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+@import "~antd/dist/antd.css";
+
+body {
+	overflow-x: hidden;
+	font-family: Sen !important;
+	background-color: #fafbfc;
+}
+
+.ant-layout-sider-dark,
+.ant-menu-dark {
+	background-color: #18202c !important;
+	color: #fff;
+}
+
+.ant-layout-sider {
+	min-height: 100vh;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.all-Containers {
+	height: 91vh;
+}
+
+.container {
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60rem;
+	padding-left: 1.75rem;
+	padding-right: 1.75rem;
+}
+
+.cntnr {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 2;
+}
+
+.inner-cntnr {
+	display: flex;
+	flex-direction: column;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+}
+
+.detail-section {
+	display: block;
+	box-sizing: border-box;
+	padding: 20px;
+	width: 58.3333%;
+}
+
+.main-head {
+	display: flex;
+	flex-flow: row wrap;
+	overflow: hidden;
+	height: min-content;
+	max-height: 500px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 6px;
+	box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
+}
+
+.left {
+	display: block;
+	box-sizing: border-box;
+	padding: 0px;
+	width: 100%;
+}
+
+.right {
+	display: block;
+	box-sizing: border-box;
+	padding: 0px;
+	width: 100%;
+}
+
+.cover-image {
+	height: 100%;
+	width: calc(100% + 1px);
+	/* background-image: url("./utils/assets/images/demo.png"); */
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bground {
+	background-color: #b6b8de;
+	display: flex;
+	height: 100%;
+	-webkit-box-pack: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.det-ctr {
+	display: flex;
+	padding-bottom: 20px;
+}
+
+.tab {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	padding: 8px;
+	border-radius: 4px;
+	margin: 0px 4px;
+	cursor: pointer;
+	transition: 0.25s;
+	z-index: 2;
+}
+
+.active-tab {
+	color: #ffffff;
+}
+
+.glider {
+	position: absolute;
+	width: 48.8%;
+	height: 100%;
+	padding: 8px;
+	border-radius: 4px;
+	margin: 0px 4px;
+	background-color: #1890ff;
+	transition: ease-in-out 0.25s;
+}
+
+.glider-active {
+	transform: translateX(100%);
+}
+
+@media (min-width: 768px) {
+	.left {
+		width: 41.6667%;
+	}
+
+	.right {
+		width: 58.3333%;
+	}
+}
+
+@media (min-width: 1100px) {
+	.left {
+		width: 41.6667%;
+	}
+
+	.right {
+		width: 58.3333%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.left {
+		width: 100%;
+	}
+
+	.detail-section {
+		width: 100%;
+	}
+
+	.det-ctr {
+		flex-direction: column-reverse;
+	}
+}
